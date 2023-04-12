@@ -40,6 +40,6 @@ Para calcular la mejor jugada posible, la técnica "minmax" realiza una búsqued
 
 Universidad De Oriente 
 Nucleo Anzoategui
-Programa hecho para la materia de Taller de Inteligencia de Artificial 2023
+Programa hecho para la materia de Taller de Inteligencia de Artificial perdiodo academico 2022-1
 
 # Zorro-y-los-Sabuesos
