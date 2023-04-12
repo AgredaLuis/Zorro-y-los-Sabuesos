@@ -1,0 +1,70 @@
+form {
+    padding: 0 1em;
+    background-color: #C4E5F2;
+    border-radius: 5px;
+    border: 1.3em solid #024873;
+    box-shadow: 0 0 1.4em #333;
+    height: 16.1em;
+}
+
+.checkbox-container {
+    cursor: pointer;
+    -moz-user-select: none;
+    user-select: none;
+}
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+}
+input:checked ~ .checkbox-indicator {
+    background-color: #024873;
+}
+.checkbox-indicator {
+    display: inline-block;
+    width: 1.1em;
+    height: 1.1em;
+    background-color: #ddd;
+}
+input[type="number"] {
+    background-color: #eee;
+    color: #111;
+    border: 1px solid #aaa;
+    padding: 0.2em;
+    width: 3.5em;
+}
+
+button{
+    height: 2rem;
+    border-radius: 5px;
+    background-color: #5CB9F2;
+    border: solid 2px #5CB9F2;
+}
+
+button:hover{
+    background-color: #024873;
+}
+
+.form-row {
+    padding: 0.5em 0;
+}
+select {
+    background-color: #eee;
+    color: #111;
+    border: 1px solid #aaa;
+    padding: 0.3em;
+    width: 80%;
+}
+option:focus, option:active, option:checked {
+    color: #eee;
+    background: linear-gradient(#5CB9F2, #5CB9F2);
+    outline: none;
+}
+.align-width {
+    display: inline-block;
+    width: 13.2em;
+}
+.Players{
+    display: flex;
+    flex-direction: column;
+
+}

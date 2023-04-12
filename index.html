@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="css/general.css" type="text/css" rel="stylesheet" />
+    <link href="css/board.css" type="text/css" rel="stylesheet" />
+    <link href="css/notifications.css" type="text/css" rel="stylesheet" />
+    <link href="css/forms.css" type="text/css" rel="stylesheet" />
+    <link href="css/scaling.css" type="text/css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/svg" href="img/hvf.png">
+    <script src="js/board.js"></script>
+    <script src="js/ai.js"></script>
+    <script src="js/main.js"></script>
+    <title>El Zorro y los Sabuesos AI</title>
+</head>
+
+<body>
+    <div id="notifications"></div>
+    <nav>
+        <img class="Logo-img" src="img/hvf.png" alt="Logo">
+        <img class="Logo-letras" src="img/hvft.png" alt="Logo">
+    </nav>
+    <main>
+        <div class="cuadro" id="board" ondragstart="return false;">
+        </div>
+        <div class="side-section">
+            <form autocomplete="off" onSubmit="return false;">
+                <div>
+                    <h4>Wins</h4>
+                    <div class="form-row">
+                        <span class="hound-name">Sabuesos</span>: <span id="win-hound">0</span>
+                        <span class="fox-name">Zorro</span>: <span id="win-fox">0</span>
+                        <span id="win-ratio"></span>
+                        <br />
+                        <button type="button" id="controls-reset-scores">Nuevo Juego</button>
+                    </div>
+                </div>
+                <div>
+                    <div class="Players form-row">
+                        <label class="checkbox-container align-width">
+                            <input type="checkbox" id="controls-ai-fox">
+                            <span class="checkbox-indicator"></span>
+                            <span class="checkbox-text"><span class="fox-name">Activar IA</span>
+                        </label>
+                    </div>
+                    <div class="form-row">
+                        <label class="align-width">
+                            <h4>Funciones</h4>
+                            <select id="controls-ai-algorithm-fox" size="2">
+                                <option>Funcion random</option>
+                                <option selected>Funcion Minimax</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+            </form>
+            <div class="instructions ">
+                <h3>Instrucciones</h3>
+                <p>El zorro debe llegar al otro extremo del tablero y escapar de los sabuesos</p>
+                <p>Los sabuesos deben acorralar al zorro y obstruir su paso</p>
+                <p>El zorro se puede avanzar o retroceder un solo paso en sentido diagonal</p>
+                <p>Los sabuesos se mueven unicamente hacia delante en sentido diagonal</p>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <br />
+        <div class="Logo-UDO"><img src="img/udo.png" alt=""></div>
+        <p>Universidad De Oriente</p>
+        <p>
+            Asignatura: Taller de Inteligencia Artificial 2023.
+        </p>
+    </footer>
+</body>
+
+</html>
