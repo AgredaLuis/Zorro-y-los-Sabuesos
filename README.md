@@ -26,8 +26,15 @@ En este archivo se almacenan las clases de tablero, zorro y sabueso, con operaci
 
 ### main.js
 
-
 Este archivo es el principal de toda la aplicacion. Da instrucciones para generar el tablero, da la posibilidad de iniciar la AI y contiene una función global para las notificaciones.
+
+
+### Funcion minimax
+
+"minmax" utiliza una función de evaluación para asignar un valor a cada posición en el juego. Este valor indica la calidad de la posición para el jugador en ese momento. El objetivo de la técnica es maximizar la función de evaluación del jugador y minimizar la función de evaluación del oponente.
+
+Para calcular la mejor jugada posible, la técnica "minmax" realiza una búsqueda en el árbol de posibles movimientos, evaluando cada nodo del árbol en función de las funciones de evaluación. La técnica "minmax" considera que el oponente intentará minimizar el valor de la función de evaluación del jugador, por lo que trata de maximizarla.
+
 
 ## Para
 
